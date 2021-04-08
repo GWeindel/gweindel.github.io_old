@@ -1,185 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
-
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+            <meta name="author" content="GABRIEL WEINDEL" />
 
 
+            <meta name="description" content="Blog posts and thoughts on cognitive science (under construction)." />
 
+            <meta property="og:type" content="article" />
+            <meta name="twitter:card" content="summary"/>
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Gabriel Weindel's webage - Introducing myself</title>
 
+                <link rel="stylesheet" type="text/css" href="/theme/libs/bootstrap-4.2.1/dist/css/bootstrap.min.css">
+                <link rel="stylesheet" type="text/css" href="/theme/libs/fontawesome-free-5.2.0-web/css/all.min.css">
+            <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="/theme/css/ipynb.css" media="screen">
+            <style>
+                #progressBar::-webkit-progress-value {
+                    background-color: #24292e;
+                }
+                #progressBar::-moz-progress-bar {
+                    background-color: #24292e;
+                }
+            </style>
 
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="white">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="white">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Microsoft EDGE -->
-    <meta name="msapplication-TileColor" content="white">
+        <link href="/theme/libs/prism.css" rel="stylesheet" />
 
-<meta name="author" content="Gabriel Weindel" />
-<meta name="description" content="My name is Gabriel Weindel and I am a cognitive scientist currently working at Aix-Marseille Université in the Laboratoire de Psychologie Cognitive and Laboratoire de Neurosciences Cognitives." />
-<meta name="keywords" content="">
-
-
-<meta property="og:site_name" content="Gabriel Weindel"/>
-<meta property="og:title" content="Introducing myself"/>
-<meta property="og:description" content="My name is Gabriel Weindel and I am a cognitive scientist currently working at Aix-Marseille Université in the Laboratoire de Psychologie Cognitive and Laboratoire de Neurosciences Cognitives."/>
-<meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="/introducing-myself.html"/>
-<meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2020-04-06 10:20:00+02:00"/>
-<meta property="article:modified_time" content="2020-04-06 10:20:00+02:00"/>
-<meta property="article:author" content="/author/gabriel-weindel.html">
-<meta property="article:section" content="posts"/>
-<meta property="og:image" content="img/profile.png">
-
-  <title>Gabriel Weindel &ndash; Introducing myself</title>
-
-</head>
-<body class="white-theme">
-  <aside>
-    <div>
-      <a href="">
-        <img src="img/profile.png" alt="Gabriel Weindel's website" title="Gabriel Weindel's website">
-      </a>
-
-      <h1>
-        <a href="">Gabriel Weindel's website</a>
-      </h1>
-
-<p>Blog posts and thoughts on cognitive science (under construction).</p>
-
-      <nav>
-        <ul class="list">
-
-
-              <li>
-                <a target="_self"
-                   href="/pages/introduction.html#introduction">
-                  Introducing myself
-                </a>
-              </li>
-
-        </ul>
-      </nav>
-
-      <ul class="social">
-          <li>
-            <a  class="sc-twitter" href="https://twitter.com/GWeindel" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a  class="sc-github" href="https://github.com/GWeindel" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a  class="sc-orcid" href="https://orcid.org/0000-0002-7592-1686" target="_blank">
-              <i class="fab fa-orcid"></i>
-            </a>
-          </li>
-      </ul>
+        <link rel="shortcut icon" href="/theme/img/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/theme/img/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/theme/img/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/theme/img/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/theme/img/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/theme/img/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/theme/img/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/theme/img/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/theme/img/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/theme/img/apple-touch-icon-152x152.png" type="image/png" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gabriel Weindel&#39;s webage - Full Atom Feed" />
+    </head>
+    <body>
+<progress id="progressBar" max="19827" class="flat">
+    <div class="progress-container">
+        <span class="progress-bar"></span>
     </div>
+</progress>        <div class="banner-wrapper row" style="background-color: #24292e;">
+            <div class="banner">
+                <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light container">
+                    <div class="container navbar-title">
+                        <a href="/"><img id="banner-logo" src="/theme/img/logo.png" style="height: 40px; margin: 6px 0;"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link rem_08" href="/about.html">About</a>
+                        </li>
+                        <li id="last-item" class="nav-item">
+                            <a class="nav-link rem_08" href="/archives.html">Archive</a>
+                        </li>
+                     </ul>
+                    <form id="search-form" class="form-inline my-2 my-lg-0 justify-content-center" action="/search.html">
+                        <div class="search-box-div" align="center">
+                            <input id="tipue_search_input" class="form-control mr-md-2 rem_08 col-9" type="text" name="q" pattern=".{3,}" title="At least 3 characters" required="" aria-label="Search">
+                            <button id="search-btn" class="btn btn-search btn-outline-success btn-circle rem_08 col-3" type="submit" for="tipue_search_input">Search</button>
+                        </div>
+                    </form>
+                </div>
+                </nav>
+            </div>
+        </div>
+        <div id="wrap" class="mb-5">
+    <h1>Introducing myself</h1>
+    
 
-  </aside>
-  <main>
-
-    <nav>
-      <a href="">Home</a>
-
-      <a href="https://gweindel.github.io/introduction.html#introduction">About Me</a>
-      <a href="https://gweindel.github.io/category/posts.html">Posts</a>
-
-
-    </nav>
-
-<article class="single">
-  <header>
-      
-    <h1 id="introducing-myself">Introducing myself</h1>
-    <p>
-      Posted on lun. 06 avril 2020 in <a href="/category/posts.html">posts</a>
-
-    </p>
-  </header>
-
-
-  <div>
     <p>My name is Gabriel Weindel and I am a cognitive scientist currently working at Aix-Marseille Université in the Laboratoire de Psychologie Cognitive and Laboratoire de Neurosciences Cognitives. </p>
 <p>As a researcher my interest goes to the test and application of mathematical cognitive models to the general population or to populations with cognitive deficits.</p>
 <p>For a detailed summary of my curriculm see my <a href="pdfs/CV_GW.pdf">CV</a></p>
-  </div>
-  <div class="tag-cloud">
-    <p>
-    </p>
-  </div>
 
+        <p>
+        Last updated: 06 avril, 2020
+        </p>
+        </div>
+<footer class="footer">
+   <div class="container bottom_border">
+      <div class="row">
+         <div class="col">
+            <h5 class="headin5_amrc col_white_amrc pt2">ABOUT GABRIEL</h5>
+            <!--headin5_amrc-->
+            <p class="mb10"><img id="profile_img" align="left" src="/theme/img/profile.png">My name is Gabriel Weindel and I am a cognitive scientist currently working at Aix Marseille Université in the Laboratoire de Psychologie Cognitive and Laboratoire de Neurosciences Cognitives. As a researcher my interest goes to the test and application of mathematical cognitive models to the general population or to populations with cognitive deficits. See the About page for my resume.</p>
+            <p><i class="fa fa-envelope mr-2"></i>firstname.lastname[at]gmail.com</p>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <ul class="foote_bottom_ul_amrc">
+         <li><a href="/">HOME</a></li>
+         <li><a href="about.html">ABOUT</a></li>
+         <li><a href="archives.html">ARCHIVE</a></li>
+      </ul>
+      <!--foote_bottom_ul_amrc ends here-->
+      <p class="text-center">Theme created by Eric Kim (https://aegis4048.github.io/) @2018</p>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="row" align="center">
+                  <div class="footer-icon"><a href=""><i class="fab fa-linkedin-in"></i></a></div>
+                  <div class="footer-icon"><a href="https://github.com/GWeindel"><i class="fab fa-github"></i></a></div>
+              </div>
+          </div>
+      </div>
 
+      <!--social_footer_ul ends here-->
+   </div>
+</footer>
+            <script type="text/javascript" src="/theme/libs/jquery.min.js"></script>
+            <script type="text/javascript" src="/theme/libs/bootstrap-4.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
+        <script src="/theme/libs/prism.js"></script>
+        <script>
+            Prism.plugins.NormalizeWhitespace.setDefaults({
+                'remove-trailing': true,
+                'remove-indent': true,
+                'left-trim': true,
+                'right-trim': true,
+                /*'break-lines': 80,
+                'indent': 2,
+                'remove-initial-line-feed': false,
+                'tabs-to-spaces': 4,
+                'spaces-to-tabs': 4*/
+            });
+        </script>
 
-
-</article>
-
-    <footer>
-<p>&copy;  </p>
-<p>
-Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
-</p>    </footer>
-  </main>
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " Gabriel Weindel ",
-  "url" : "",
-  "image": "img/profile.png",
-  "description": "Blog posts and thoughts on cognitive science (under construction)."
-}
-</script>
-<a href="https://github.com/GWeindel/" class="github-corner" aria-label="View source on Github">
-    <svg width="80"
-         height="80"
-         viewBox="0 0 250 250"
-         style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;"
-         aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor"
-              style="transform-origin: 130px 106px;"
-              class="octo-arm">
-        </path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor"
-              class="octo-body">
-        </path>
-    </svg>
-</a>
-<style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-
-</body>
+        <script type="text/javascript" src="/theme/js/custom.js"></script>
+            <script>
+                function validateForm(query)
+                {
+                    return (query.length > 0);
+                }
+            </script>
+    </body>
 </html>
