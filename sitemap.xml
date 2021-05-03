@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2021-04-30T09:43:08-00:00</lastmod>
+<lastmod>2021-05-03T19:00:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2021-04-30T09:43:08-00:00</lastmod>
+<lastmod>2021-05-03T19:00:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/search.html</loc>
-<lastmod>2021-04-30T09:43:08-00:00</lastmod>
+<lastmod>2021-05-03T19:00:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/404.html</loc>
-<lastmod>2021-04-30T09:43:08-00:00</lastmod>
+<lastmod>2021-05-03T19:00:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/about.html</loc>
-<lastmod>2021-04-30T09:43:08-00:00</lastmod>
+<lastmod>2021-05-03T19:00:01-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -46,6 +46,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/lecture-on-linear-mixed-models</loc>
+<lastmod>2020-05-03T15:27:00+02:00</lastmod>
+<changefreq>hourly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/phd</loc>
 <lastmod>2020-04-28T10:10:00+02:00</lastmod>
 <changefreq>hourly</changefreq>
@@ -53,15 +60,22 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/construction-notice</loc>
-<lastmod>2020-04-11T12:00:00+02:00</lastmod>
-<changefreq>hourly</changefreq>
+<loc>/category/posts.html</loc>
+<lastmod>2020-05-03T15:27:00+00:09</lastmod>
+<changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/posts.html</loc>
-<lastmod>2020-04-28T10:10:00+00:09</lastmod>
+<loc>/tag/lecture.html</loc>
+<lastmod>2020-05-03T15:27:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/resources.html</loc>
+<lastmod>2020-05-03T15:27:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -69,20 +83,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/phd.html</loc>
 <lastmod>2020-04-28T10:10:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/resources.html</loc>
-<lastmod>2020-04-28T10:10:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/construction.html</loc>
-<lastmod>2020-04-11T12:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

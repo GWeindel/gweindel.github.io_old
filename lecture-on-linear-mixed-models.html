@@ -7,15 +7,32 @@
 
 
 
-            <meta name="author" content="GABRIEL WEINDEL" />
+            <meta name="author" content="Gabriel" />
 
 
-            <meta name="description" content="Blog posts, thoughts and resources about cognitive sciences" />
+            <meta name="description" content="" />
 
-            <meta property="og:type" content="article" />
+                <meta property="og:type" content="article" />
             <meta name="twitter:card" content="summary"/>
 
-        <title>Gabriel Weindel's webpage - Introducing myself</title>
+        <meta name="keywords" content="lecture, resources, posts, "/>
+
+        <link rel="canonical" href="/lecture-on-linear-mixed-models">
+    <meta property="og:title" content="Lecture on Linear Mixed Models | Gabriel Weindel&#39;s webpage"/>
+    <meta property="og:url" content="/lecture-on-linear-mixed-models" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Gabriel Weindel&#39;s webpage" />
+    <meta property="og:article:author" content="Gabriel" />
+        <meta property="og:article:published_time" content="2020-05-03T15:27:00+02:00" />
+        <meta property="og:article:modified_time" content="2020-05-03T15:27:00+02:00" />
+    <meta name="twitter:title" content="Lecture on Linear Mixed Models | Gabriel Weindel&#39;s webpage">
+    <meta name="twitter:description" content="">
+            <meta property="og:image" content="/img/stone.png" />
+            <meta name="twitter:image" content="/img/stone.png"/>
+
+
+        <title>    Lecture on Linear Mixed Models  | Gabriel Weindel&#39;s webpage
+</title>
 
                 <link rel="stylesheet" type="text/css" href="/theme/libs/bootstrap-4.2.1/dist/css/bootstrap.min.css">
                 <link rel="stylesheet" type="text/css" href="/theme/libs/fontawesome-free-5.2.0-web/css/all.min.css">
@@ -86,16 +103,74 @@
             </div>
         </div>
         <div id="wrap" class="mb-5">
-    <h1>Introducing myself</h1>
-    
+<div id="post-container" class="container post index">
+    <article>
+        <header>
+            <h1>Lecture on Linear Mixed Models</h1>
+            <div class="row justify-content-between no-margin">
+                <h4 class="article-category">Category > <a class="article-category-link" href="/archives.html">posts</a></h4>
+                <span class="article-date">03 mai, 2020</span>
+            </div>
+            <div class="meta meta-tag no-margin no-border">
+                <div>
+                        <a href="/tag/lecture.html" class="tag">lecture</a>
+                        <a href="/tag/resources.html" class="tag">resources</a>
+                </div>
+            </div>
+            <section>
+    <div class="row justify-content-end mt-3" style="align-items: center">
+        <div class="share-post-intro mr-2">Share This Post :</div>
+        <div class="social-share-btns-container">
+            <div class="social-share-btns">
+                <a class="share-btn share-btn-twitter" href="https://twitter.com/home?status=/lecture-on-linear-mixed-models" rel="nofollow" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="share-btn share-btn-facebook" href="http://www.facebook.com/sharer/sharer.php?u=/lecture-on-linear-mixed-models" rel="nofollow" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="share-btn share-btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=/lecture-on-linear-mixed-models" rel="nofollow" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <p>My name is Gabriel Weindel and I am a cognitive scientist currently working at Aix-Marseille Université in the Laboratoire de Psychologie Cognitive and Laboratoire de Neurosciences Cognitives. </p>
-<p>As a researcher my interest goes to the test and application of mathematical cognitive models to the general population or to populations with cognitive deficits.</p>
-<p>For a detailed summary of my curriculm see my <a href="pdfs/CV_GW.pdf">CV</a></p>
-
-        <p>
-        Last updated: 06 avril, 2020
-        </p>
+        </header>
+        <div class="article_content">
+            
+            <p><strong>Introduction</strong></p>
+<p>This is a serie of lecture I gave to doctoral students in psychology and neuroscience at Aix-Marseille Université in April 2021. The course aimed at giving enough information and examples about mixed models to allow students to think about how they can apply such models to their data.</p>
+<p>All the course is intended to be "hands-on" and therefore the R code is provided with reproducible examples (mainly simulations). The code is meant to be accessible to beginners so it remains simple and redundant (and... I'm a python user so I don't get all the tidyverse things for now).</p>
+<p>All the content of the slides can be recreated as an interactive jupyter notebook where you can easily live code inside the presentation thanks to the RISE python package. If you're interested in replicating this lecture take a look at the root repository (https://github.io/GWdeindel/lecture_mixed_models_AMU_2021) with all the instructions.</p>
+<p><strong>Content of the course</strong> :</p>
+<p><strong>Module 1</strong>
+The first module is dedicated to linear models both in the perspective of a reminder and of extending students knowledge with what can be done using linear models (prediction, factor recoding, etc.)</p>
+<p>The presentation can be found <a href="https://gweindel.github.io/lecture_mixed_models_AMU_2021/Module_1.slides.html">here</a> (best to open in a separate tab)</p>
+<p><strong>Module 2</strong>
+The second module introduces the core aspect of linear mixed models in a frequentist context and using the '''lme4''' R package. We start by illustrating the concept of maximum likelihood, hierarchies in the data and how to account for these hierarchies.</p>
+<p>The presentation can be found <a href="https://gweindel.github.io/lecture_mixed_models_AMU_2021/Module_2.slides.html">here</a></p>
+<p><strong>Module 3</strong>
+The last module introduces Bayesian estimation and generalized linear mixed models. The aim is to give students clues to understand these models fitted in a Bayesian context rather than being exhaustive, I conclude with a series of resources for those who want to go further in the learning of regression models and Bayesian estimation.</p>
+<p>The presentation can be found <a href="https://gweindel.github.io/lecture_mixed_models_AMU_2021/Module_3.slides.html">here</a></p>
+        </div>
+        <hr/>
+        <aside>
+        <nav>
+        <ul class="articles-timeline">
+            <li class="previous-article">« <a href="/phd" title="Previous: PhD">PhD</a></li>
+        </ul>
+        </nav>
+        </aside>
+        <hr/>
+<section style="margin-top: 30px">
+    <h2>Related Posts</h2>
+<ul class="related-posts-list">
+<li><a href="/phd" title="PhD">PhD</a></li>
+</ul>
+</section>
+    </article>
+</div>
         </div>
 <footer class="footer">
    <div class="container bottom_border">
