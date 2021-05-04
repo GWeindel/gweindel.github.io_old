@@ -15,5 +15,13 @@ The last module introduces Bayesian estimation and generalized linear mixed mode
 &lt;p&gt;The presentation can be found &lt;a href="https://gweindel.github.io/lecture_mixed_models_AMU_2021/Module_3.slides.html"&gt;here&lt;/a&gt;&lt;/p&gt;</content><category term="posts"></category><category term="lecture"></category><category term="resources"></category></entry><entry><title>PhD</title><link href="/phd" rel="alternate"></link><published>2020-04-28T10:10:00+02:00</published><updated>2020-04-28T10:10:00+02:00</updated><author><name>Gabriel</name></author><id>tag:None,2020-04-28:/phd</id><summary type="html">&lt;p&gt;Hi everyone,&lt;/p&gt;
 &lt;p&gt;I had my PhD defense last month and I'm happy to share with you the manuscript that can be found on &lt;a href="https://thesiscommons.org/342zp"&gt;thesis commons&lt;/a&gt;. Along with the manuscript there is also an associated &lt;a href="https://osf.io/rx73c/"&gt;OSF&lt;/a&gt; project page where you can find most of the code used for the analysis in …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hi everyone,&lt;/p&gt;
 &lt;p&gt;I had my PhD defense last month and I'm happy to share with you the manuscript that can be found on &lt;a href="https://thesiscommons.org/342zp"&gt;thesis commons&lt;/a&gt;. Along with the manuscript there is also an associated &lt;a href="https://osf.io/rx73c/"&gt;OSF&lt;/a&gt; project page where you can find most of the code used for the analysis in the PhD manuscript, some data is still missing but will be uploaded when the chapters get published.&lt;/p&gt;
-&lt;p&gt;There is also a live recording of the presentation available on &lt;a href="https://www.youtube.com/watch?v=-ACuGrZVuDE"&gt;youtube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There is also a live recording of the presentation available :
+&lt;span class="videobox"&gt;
+                    &lt;iframe width="640" height="390"
+                        src='https://www.youtube.com/embed/-ACuGrZVuDE'
+                        frameborder='0' webkitAllowFullScreen
+                        mozallowfullscreen allowFullScreen&gt;
+                    &lt;/iframe&gt;
+                &lt;/span&gt;
+on &lt;a href="https://www.youtube.com/watch?v=-ACuGrZVuDE"&gt;youtube&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Cheers !&lt;/p&gt;</content><category term="posts"></category><category term="PhD"></category><category term="resources"></category></entry></feed>
