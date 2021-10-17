@@ -140,7 +140,7 @@
         <div class="article_content">
             
             <p>Sorry, it's not about how to invite runDMC rappers to feature your notebook, rather it is about using the package "dynamic models of choice" (<a href="https://osf.io/pbwx8/">runDMC</a>), to fit decision making models to your behavioral (and physiological) data within the environment of Jupyter.</p>
-<p>Why you ask ? Well, I'm allergic to development environment such as Rstudio or Rmarkdown as they are, to me, not practical enough when it comes to explore your data or your analysis pipeline while keeping a record of everythin. For that I prefer the jupyter environment but installing R and it's packages can be tricky, especially with complex architectures such as the one required by runDMC. Therefore I wrote this short tutorial in case others want to use the ability of jupyter but still rely on runDMC to do your decision data anaysis.</p>
+<p>Why you ask ? Well, I'm allergic to development environment such as Rstudio or Rmarkdown as they are, to me, not practical enough when it comes to explore your data or your analysis pipeline while keeping a record of everything. For that I prefer the jupyter environment but installing R and it's packages can be tricky, especially with complex architectures such as the one required by runDMC. Therefore I wrote this short tutorial in case others want to use the ability of jupyter but still rely on runDMC to do your decision data anaysis.</p>
 <p>We we'll be using conda, if you do not arleady have anaconda installed download the latest version at <a href="https://docs.anaconda.com/anaconda/install/index.html">anaconda.com</a>.</p>
 <p>First we will ensure that packages from conda are downloaded from the conda-forge repositories that has a larger collection of packages than default conda repositories. For that, in a terminal (for linux and Mac users) or using the anaconda prompt (for windows) launch the following command : </p>
 <div class="highlight"><pre><span></span><code><span class="err">conda config --add channels conda-forge</span>
@@ -168,7 +168,7 @@ For that download the zip file from the <a href="https://osf.io/njsqa/">latest D
 <div class="highlight"><pre><span></span><code><span class="err">install.packages(&quot;packages/coda_0.19-3.tar.gz&quot;,repos=NULL,type=&quot;source&quot;)</span>
 </code></pre></div>
 
-<p>Then R and jupyter packages are not interfacing very well you need a last step to provide jupyter with the relevant locations for the R package : </p>
+<p>Then R and jupyter packages are not interfacing very well you need a last step to provide jupyter with the relevant locations for the R packages : </p>
 <div class="highlight"><pre><span></span><code><span class="err"> install.packages(&#39;IRkernel&#39;) </span>
 <span class="err"> IRkernel::installspec()</span>
 </code></pre></div>
