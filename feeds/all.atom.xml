@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Gabriel Weindel's webpage</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2021-05-03T15:27:00+02:00</updated><subtitle>Blog posts, thoughts and resources about cognitive sciences</subtitle><entry><title>Lecture on Linear Mixed Models</title><link href="/lecture-on-linear-mixed-models" rel="alternate"></link><published>2021-05-03T15:27:00+02:00</published><updated>2021-05-03T15:27:00+02:00</updated><author><name>Gabriel</name></author><id>tag:None,2021-05-03:/lecture-on-linear-mixed-models</id><summary type="html">&lt;p&gt;This is a series of lectures I gave to doctoral students in psychology and neuroscience at Aix-Marseille Université in April 2021. The course aimed at giving enough information and examples about mixed models to allow students to think about how they can apply such models to their data.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Gabriel Weindel's webpage</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2021-10-18T09:12:00+02:00</updated><subtitle>Blog posts, thoughts and resources about cognitive sciences</subtitle><entry><title>RunDMC in a jupyter notebook</title><link href="/rundmc-in-a-jupyter-notebook" rel="alternate"></link><published>2021-10-18T09:12:00+02:00</published><updated>2021-10-18T09:12:00+02:00</updated><author><name>Gabriel</name></author><id>tag:None,2021-10-18:/rundmc-in-a-jupyter-notebook</id><summary type="html">&lt;p&gt;A brief tutorial on how to get the R packages runDMC in a jupyter environment through anaconda.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sorry, it's not about how to invite runDMC rappers to feature your notebook, rather it is about using the package "dynamic models of choice" (&lt;a href="https://osf.io/pbwx8/"&gt;runDMC&lt;/a&gt;), to fit decision making models to your behavioral (and physiological) data within the environment of Jupyter.&lt;/p&gt;
+&lt;p&gt;Why you ask ? Well, I'm allergic to development environment such as Rstudio or Rmarkdown as they are, to me, not practical enough when it comes to explore your data or your analysis pipeline while keeping a record of everythin. For that I prefer the jupyter environment but installing R and it's packages can be tricky, especially with complex architectures such as the one required by runDMC. Therefore I wrote this short tutorial in case others want to use the ability of jupyter but still rely on runDMC to do your decision data anaysis.&lt;/p&gt;
+&lt;p&gt;We we'll be using conda, if you do not arleady have anaconda installed download the latest version at &lt;a href="https://docs.anaconda.com/anaconda/install/index.html"&gt;anaconda.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First we will ensure that packages from conda are downloaded from the conda-forge repositories that has a larger collection of packages than default conda repositories. For that, in a terminal (for linux and Mac users) or using the anaconda prompt (for windows) launch the following command : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;conda config --add channels conda-forge&lt;/span&gt;
+&lt;span class="err"&gt;conda config --set channel_priority strict&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then we will simultaneously create a new environment called "DMC" with the available and required packages from conda-forge : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;conda create -n DMC r-loo r-hypergeo r-statmod r-pracma r-snowfall r-numDeriv r-vioplot r-ggplot2 r-gridExtra r-truncdist r-msm r-rlecuyer r-laplacesdemon r-mvtnorm r-matrix jupyter #That will take a while&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;However a few of the required packages are not contained in the conda forge rep (rtdists, stringr, Brobdingnag) . We therefore have to launch an R session in the DMC environment to install them afterwards. For that first launch an R session by previously activating our new conda env : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;conda activate DMC&lt;/span&gt;
+&lt;span class="err"&gt;R&lt;/span&gt;
+&lt;span class="err"&gt;install.packages(&amp;quot;Brobdingnag&amp;quot;) # This will prompt a screen requiring to select a server from which you will download, just select the nearest one&lt;/span&gt;
+&lt;span class="err"&gt;install.packages(&amp;quot;stringr&amp;quot;) &lt;/span&gt;
+&lt;span class="err"&gt;install.packages(&amp;quot;rtdists&amp;quot;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then we will install a modified version of the coda package that allows for plotting of priors with plot.dmc.
+For that download the zip file from the &lt;a href="https://osf.io/njsqa/"&gt;latest DMC version&lt;/a&gt;, extract it in a relevant path and then move to that working directory within the R session, in my case and for the version 190819 it goes as follows : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;setwd(&amp;quot;~/DMC_190819&amp;quot;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And install the coda package :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;install.packages(&amp;quot;packages/coda_0.19-3.tar.gz&amp;quot;,repos=NULL,type=&amp;quot;source&amp;quot;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Then R and jupyter packages are not interfacing very well you need a last step to provide jupyter with the relevant locations for the R package : &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt; install.packages(&amp;#39;IRkernel&amp;#39;) &lt;/span&gt;
+&lt;span class="err"&gt; IRkernel::installspec()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Et voilà ! You're ready to go and use runDMC and the associated tutorials :)&lt;/p&gt;
+&lt;p&gt;Let me know in case you run into troubles.&lt;/p&gt;</content><category term="posts"></category><category term="resources"></category><category term="tutorial"></category></entry><entry><title>Lecture on Linear Mixed Models</title><link href="/lecture-on-linear-mixed-models" rel="alternate"></link><published>2021-05-03T15:27:00+02:00</published><updated>2021-05-03T15:27:00+02:00</updated><author><name>Gabriel</name></author><id>tag:None,2021-05-03:/lecture-on-linear-mixed-models</id><summary type="html">&lt;p&gt;This is a series of lectures I gave to doctoral students in psychology and neuroscience at Aix-Marseille Université in April 2021. The course aimed at giving enough information and examples about mixed models to allow students to think about how they can apply such models to their data.&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a series of lectures I gave to doctoral students in psychology and neuroscience at Aix-Marseille Université in April 2021. The course aimed at giving enough information and examples about mixed models to allow students to think about how they can apply such models to their data.&lt;/p&gt;
 &lt;p&gt;All the course is intended to be "hands-on" and therefore the R code is provided with reproducible examples (mainly simulations). The code is meant to be accessible to beginners so it remains simple and redundant (and... I'm a python user so I don't get all the tidyverse things for now).&lt;/p&gt;
 &lt;p&gt;All the content of the slides can be recreated as an interactive jupyter notebook where you can easily live code inside the presentation thanks to the RISE python package. If you're interested in replicating this lecture take a look at the root repository (https://github.com/GWeindel/lecture_mixed_models_AMU_2021) with all the instructions.&lt;/p&gt;
