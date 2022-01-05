@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2022-01-05T14:26:40-00:00</lastmod>
+<lastmod>2022-01-05T14:30:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2022-01-05T14:26:40-00:00</lastmod>
+<lastmod>2022-01-05T14:30:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/search.html</loc>
-<lastmod>2022-01-05T14:26:40-00:00</lastmod>
+<lastmod>2022-01-05T14:30:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/404.html</loc>
-<lastmod>2022-01-05T14:26:40-00:00</lastmod>
+<lastmod>2022-01-05T14:30:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/about.html</loc>
-<lastmod>2022-01-05T14:26:40-00:00</lastmod>
+<lastmod>2022-01-05T14:30:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -42,6 +42,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>/introducing-myself</loc>
 <lastmod>2020-04-06T10:20:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/a-surprising-link-between-electrophysiological-data-in-monkeys-and-a-behavioral-model-in-humans</loc>
+<lastmod>2022-01-05T14:25:00+01:00</lastmod>
+<changefreq>hourly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -67,15 +74,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/a-surprising-link-between-electrophysiological-data-in-monkeys-and-a-behavioral-model-in-humans</loc>
-<lastmod>2021-01-05T14:25:00+01:00</lastmod>
-<changefreq>hourly</changefreq>
+<loc>/category/posts.html</loc>
+<lastmod>2022-01-05T14:25:00+00:09</lastmod>
+<changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/posts.html</loc>
-<lastmod>2021-10-18T09:12:00+00:09</lastmod>
+<loc>/tag/science.html</loc>
+<lastmod>2022-01-05T14:25:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -104,13 +111,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/phd.html</loc>
 <lastmod>2021-04-28T10:10:00+00:09</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/science.html</loc>
-<lastmod>2021-01-05T14:25:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
